@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.content {
+  margin: 149px 24px 263px 24px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242742;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242742;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  background: #242742;
+  border-radius: 8px;
+  border: none;
+  width: 327px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+  border-radius: 8px;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: scale(0.7);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: scale(0.84);
+  }
+
+  89% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: scale(0.95);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 550px) {
+  .background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #36384d;
+  }
+
+  .container {
+    background: #ffffff;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    width: 504px;
+    height: 520px;
+  }
+
+  .content {
+    margin: 48px 64px 40px 64px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .btn {
+    width: 376px;
+  }
+}

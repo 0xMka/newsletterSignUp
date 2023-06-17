@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.img_illustration {
+  background-image: url(../../assets/images/illustration-sign-up-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px 0px 16px 16px;
+  height: 284px;
+  width: 100%;
+}
+
+.content {
+  padding: 40px 24px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #242742;
+  flex-wrap: nowrap;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242742;
+  margin: 24px 0;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: scale(0.7);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: scale(0.84);
+  }
+
+  89% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: scale(0.95);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 960px) {
+  .background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #36384d;
+  }
+  .container {
+    flex-direction: row-reverse;
+    width: 928px;
+    height: 641px;
+    background: #ffffff;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    padding: 24px;
+  }
+
+  .img_illustration {
+    background-image: url(../../assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    height: 593px;
+    width: 400px;
+  }
+
+  .content {
+    padding: 90px 64px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+}
